@@ -8,5 +8,5 @@ Scenario: As I login
   Then I should see "Log in"
   When I fill in "Email" with "email@random.com"
   And I fill in "Password" with "password"
-  Then I click "Log in"
+  Then I click "Log in" 
   Then I should see "Signed in successfully."
