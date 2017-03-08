@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5'
+gem 'rails', '5.0.2'
 gem 'rake', '~> 11.1', '>= 11.1.2'
-gem 'pg', '~> 0.15'
+gem 'pg', '~> 0.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
@@ -12,6 +12,7 @@ gem 'chosen-rails'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'mailboxer'
+
 
 
 group :development do
@@ -24,4 +25,12 @@ group :production do
 end
 
 
-
+group :development, :test do
+  gem 'pry'
+  gem 'coveralls', require: false
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+end
