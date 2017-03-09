@@ -17,7 +17,7 @@ Scenario: As I login
   Given I am logged in as "felix"
   And I click "Inbox"
   And I click "Compose"
-  #And I fill in "felix" with "felix"
+  And I select "felix" from "Recipients"
   And I fill in "Subject" with "subject"
   And I fill in "Type your message here" with "Message"
   And I click "Send Message"
