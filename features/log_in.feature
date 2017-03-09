@@ -9,7 +9,7 @@ Background:
 
 Scenario: As I login
   Given I am on the index page
-  And I click "Login" button
+  Then I click "Login"
   Then I should see "Log in"
   When I fill in "Email" with "felix@telia.com"
   And I fill in "Password" with "fisk1234"
