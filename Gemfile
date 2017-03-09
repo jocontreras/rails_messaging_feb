@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
 
 gem 'rails', '5.0.2'
 gem 'rake', '~> 11.1', '>= 11.1.2'
@@ -36,4 +35,5 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'travis'
+
 end
