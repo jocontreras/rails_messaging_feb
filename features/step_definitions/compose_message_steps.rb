@@ -13,3 +13,8 @@ And(/^I send a mail to "([^"]*)"$/) do |name|
   @user.send_message(@receiver, 'Lorem ipsum...', 'Subject')
 end
 
+Then(/^show me the page$/) do
+  save_and_open_page
+end
+
+
